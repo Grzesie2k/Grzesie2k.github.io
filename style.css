@@ -26,12 +26,13 @@
 
 .contact {
 	padding: 0;
+	width: 100%;
+	display: table;
 }
 
 .contact li {
-	display: block;
-	width: 33.3%;
-	float: left;
+	display: table-cell;
+	text-align: center;
 }
 
 .contact a {

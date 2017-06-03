@@ -13,7 +13,11 @@ var user = {
 	},
 	setEmail: function (email) {
 		var emailLink = document.querySelector(".section .email");
-		emailLink.href = "mailto:" + email;
+		if (email) {
+			emailLink.href = "mailto:" + email;
+		} else {
+			emailLink.style.display = "none";
+		}
 	},
 	setHireable: function (isHireable) {
 		document.querySelector('.hireable').style.display = isHireable ? "inline-block" : "none"
